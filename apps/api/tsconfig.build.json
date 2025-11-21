@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "outDir": "./dist",
+    "paths": {
+      "@monorepo/shared": ["../../packages/shared/dist/index.js"],
+      "@monorepo/shared/*": ["../../packages/shared/dist/*"],
+      "@monorepo/ui/*": ["../../packages/ui/dist/*"],
+      "@app/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
