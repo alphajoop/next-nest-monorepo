@@ -10,6 +10,25 @@ Modern monorepo including:
 - **CI/CD** with GitHub Actions
 - **Husky + Commitlint + Lint-staged** for code quality
 
+## 📦 Package Management
+
+```bash
+# Install a package in the root workspace
+pnpm add -w package-name
+
+# Add a package to a specific app (e.g. web)
+pnpm add package-name --filter web
+
+# Add a dev dependency to a specific app
+pnpm add -D package-name --filter web
+
+# Add a package to multiple workspaces
+pnpm add package-name --filter web --filter api
+
+# Install all dependencies
+pnpm install
+```
+
 ## 🚀 Commands
 
 Root (monorepo):
