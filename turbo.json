@@ -19,7 +19,7 @@
       "dependsOn": ["prettier"]
     },
     "test": {
-      "dependsOn": ["^test"]
+      "dependsOn": ["^build", "^test"]
     }
   }
 }
